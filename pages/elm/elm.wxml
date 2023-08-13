@@ -1,0 +1,60 @@
+<view style="background-color: #59ADF8; height: {{pageHeight}}px;">
+
+  <view class="bg-white round">
+    <view class="grid col-2 margin-bottom text-center">
+      <view class="padding solgon">花更少的Money</view>
+      <view class="padding solgon">点更好的外卖</view>
+
+    </view>
+  </view>
+  <swiper style="margin-top: -40px;" class="card-swiper round-dot" indicator-dots="true" circular="true" autoplay="true" interval="3000" duration="500" indicator-color="#8799a3" indicator-active-color="#0081ff">
+    <swiper-item wx:for="{{swiperList}}" wx:key class="{{cardCur==index?'cur':''}}">
+      <view class="swiper-item">
+        <image src="{{item.url}}" mode="aspectFill" wx:if="{{item.type=='image'}}"></image>
+      </view>
+    </swiper-item>
+  </swiper>
+  <view class="cu-list grid card-menu col-1 ">
+    <view class="bg-gray padding  ">
+      <view class="cu-steps steps-arrow">
+        <view class="cu-item text-blue">
+          <text class="cuIcon-redpacket_fill"></text>
+          <text class="text-black">领红包</text>
+        </view>
+        <view class="cu-item text-blue">
+          <text class="cuIcon-moneybagfill"></text>
+          <text class="text-black">优惠多</text>
+        </view>
+        <view class="cu-item text-blue">
+          <text class="cuIcon-mobilefill"></text>
+          <text class="text-black">点外卖</text>
+        </view>
+      </view>
+    </view>
+  </view>
+
+
+  <view class="cu-list grid card-menu col-1 ">
+    <view class="bg-gray padding">
+      <button class="cu-btn round line-purple  shadow lg" bindtap="redPacketFive">①先领APP红包</button>
+    </view>
+    <view class="bg-gray padding">
+      <button class="cu-btn round bg-blue shadow lg" bindtap="redPacketOne">②然后领大额红包</button>
+    </view>
+    <view class="bg-gray padding">
+      <button class="cu-btn round bg-cyan shadow lg" bindtap="redPacketTwo">③再领专享红包</button>
+    </view>
+    <view class="bg-gray padding">
+      <button class="cu-btn round line-mauve shadow lg" bindtap="redPacketThree">④接着领限量红包</button>
+    </view>
+    <view class="bg-gray padding">
+      <button class="cu-btn round line-blue shadow lg" bindtap="redPacketFour">⑤最后领红包节红包</button>
+    </view>
+    
+    <view class="padding-sm bg-gray">
+      <view class="padding-xs" bindtap="orderList">
+        <view class="cuIcon-form text-blue">查看订单</view>
+      </view>
+    </view>
+  </view>
+</view>

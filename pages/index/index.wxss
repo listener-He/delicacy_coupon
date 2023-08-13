@@ -1,0 +1,7 @@
+.solgon{
+  background-color: #F8E354;
+  font-size: large;
+  font-family: '黑体';
+  font-weight: bold;
+  color: #8D3B00;
+}

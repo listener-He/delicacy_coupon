@@ -1,0 +1,37 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/elm/elm"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#CCE8CF",
+    "navigationBarTitleText": "舌尖优省",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "selectedColor": "green",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "美团",
+        "iconPath": "images/mt.png",
+        "selectedIconPath": "images/mt_fill.png"
+      },
+      {
+        "pagePath": "pages/elm/elm",
+        "text": "饿了么",
+        "iconPath": "images/elm.png",
+        "selectedIconPath": "images/elm_fill.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents",
+  "permission": {
+    "scope.clipboard": {
+      "desc": "你的剪贴板权限将用于复制和粘贴文本"
+    }
+  }
+}
